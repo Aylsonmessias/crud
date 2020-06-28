@@ -7,15 +7,15 @@
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // prepare sql and bind parameters
-    $stmt = $conn->prepare("INSERT INTO clinica (nome, cpf, celular)
-    VALUES (:nome, :cpf, :celular)");
+    $stmt = $conn->prepare("INSERT INTO paciente (nome, cpf, fone)
+    VALUES (:nome, :cpf, :fone)");
     $stmt->bindParam(':nome', $nome);
     $stmt->bindParam(':cpf', $cpf);
-    $stmt->bindParam(':celular', $celular);
+    $stmt->bindParam(':fone', $fone);
 
     $nome           = $_POST['nome'];
     $cpf           = $_POST['cpf'];
-    $celular        = $_POST['celular'];
+    $fone        = $_POST['fone'];
 
     $stmt->execute();
 

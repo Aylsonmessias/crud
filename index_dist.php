@@ -102,7 +102,7 @@
                         echo '<td>'.$v['id'].'</td>';
                         echo '<td>'.$v['nome'].'</td>';
                         echo '<td>'.$v['cpf'].'</td>';
-                        echo '<td>'.$v['celular'].'</td>';
+                        echo '<td>'.$v['fone'].'</td>';
                         echo '<td style="text-align:center"> 
                               <a class="btn btn-primary btn-sm" href="vis_dist.php?id='.$v['id'].'"><i class="fas fa-folder"></i></a>
                               <a class="btn btn-info btn-sm" href="edt_dist.php?id='.$v['id'].'"><i class="fas fa-pencil-alt"></i></a>                            
