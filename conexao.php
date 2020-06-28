@@ -6,10 +6,10 @@
        // $password   = "yVu5xbKsLmA243L";
        // $db         = "epiz_25649959_loja";
 
-        $servername = "localhost";
-        $username   = "root";
-        $password   = "";
-        $db         = "clinica";
+        $servername = "sql308.epizy.com";
+        $username   = "epiz_26122990";
+        $password   = "*************";
+        $db         = "epiz_26122990_clinica";
 
         try {
         $conn = new PDO("mysql:host=$servername;dbname=$db;charset=utf8", $username, $password);
